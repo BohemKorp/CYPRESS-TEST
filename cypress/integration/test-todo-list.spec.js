@@ -10,14 +10,14 @@ describe('suite test-todo', () => {
         })
     })
 
-    // it('01-test adding new todo items', () => {
-    //     const newItem = 'Hello'
+    it('01-test adding new todo items', () => {
+        const newItem = 'Hello'
 
-    //     homeTodoPage.typeItem(newItem)
-    //     homeTodoPage.elements.todoElement()
-    //         .should('have.length', 1)
-    //         .should('have.text', newItem)
-    // })
+        homeTodoPage.typeItem(newItem)
+        homeTodoPage.elements.todoElement()
+            .should('have.length', 1)
+            .should('have.text', newItem)
+    })
 
     it('02-test editing existing todo item', () => {
         const item = 'Hello'
@@ -35,13 +35,13 @@ describe('suite test-todo', () => {
             .should('have.text', newValueItem)
     })
 
-    // it('03-test deleting existing todo item', () => {
-    //     const item = 'Hello Delete'
-    //     homeTodoPage.typeItem(item)
-    //     homeTodoPage.deleteItems()
-    //     cy.contains(item)
-    //         .should('not.exist')
+    it('03-test deleting existing todo item', () => {
+        const item = 'Hello Delete'
+        homeTodoPage.typeItem(item)
+        homeTodoPage.deleteItems()
+        cy.contains(item)
+            .should('not.exist')
             
-    // })
+    })
 
 })
