@@ -11,6 +11,8 @@ describe('suite test-todo', () => {
     })
 
     it('01-test adding new todo items', () => {
+        //This test is sufficent because i relev all the possibles scenarios
+        
         const newItem = 'Hello'
 
         homeTodoPage.typeItem(newItem)
