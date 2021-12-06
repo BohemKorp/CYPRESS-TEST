@@ -33,7 +33,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm run build
-          start: npm start
+          start: npm --version
           run: npm install
 
       # Runs a set of commands using the runners shell
